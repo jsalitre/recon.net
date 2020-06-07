@@ -1,0 +1,15 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears.runtimeconfig.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears.runtimeconfig.dev.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/Recon.Gears.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/bin/Debug/netcoreapp3.1/CommandLine.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.csproj.CopyComplete
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.Gears/obj/Debug/netcoreapp3.1/Recon.Gears.genruntimeconfig.cache

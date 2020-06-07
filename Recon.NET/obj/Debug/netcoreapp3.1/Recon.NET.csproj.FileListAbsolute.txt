@@ -1,0 +1,15 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.runtimeconfig.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.runtimeconfig.dev.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/CommandLine.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.csproj.CopyComplete
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.genruntimeconfig.cache

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FCmyjkXhOY0Y34vA10He2PmF0BRxVUm+pe/MMjJF8lbAMfXWvlC+XAFojeoGtFchOwxZIQzOytFffDvStt7W7A==",
+  "success": true,
+  "projectFilePath": "/home/jsalitre/Documents/Projects/recon.net/Recon.NET/Recon.NET.csproj",
+  "expectedPackageFiles": [
+    "/home/jsalitre/.nuget/packages/commandlineparser/2.8.0/commandlineparser.2.8.0.nupkg.sha512",
+    "/home/jsalitre/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,43 +1,43 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using CommandLine;
 
 namespace Recon.Entities {
 
-    public class Parameters {
+    public class Options {
 
         [Option ('u', "url", Required = true, HelpText = "target domain")]
-        public string Url { get; set; }
+        public Uri Url { get; set; }
 
         [Option ('p', "path", Required = true, HelpText = "root folder where all data is stored")]
         public string WorkingPath {get;set;}
 
         private string[] args;
 
-        public Parameters () {
+        public Options () {
 
         }
 
-        public Parameters (string[] args) {
+        public Options (string[] args) {
             this.args = args;
             
         }
 
-        public Parameters Init () {
+        public Options Init () {
 
-            Parser.Default.ParseArguments<Parameters> (this.args)
+            Parser.Default.ParseArguments<Options> (this.args)
                 .WithParsed (RunOptions).WithNotParsed (HandleErrors);
 
             return this;
                 
         }
 
-        public void RunOptions (Parameters o) {
+        public void RunOptions (Options o) {
             Uri _targetUrl;
-            if (!Uri.TryCreate (o.Url, UriKind.Absolute, out _targetUrl)) {
+            if (!Uri.TryCreate (o.Url.ToString(), UriKind.Absolute, out _targetUrl)) {
                 
             } else {
-                this.Url = o.Url;
+                this.Url = _targetUrl;
             }
 
             this.WorkingPath = o.WorkingPath;

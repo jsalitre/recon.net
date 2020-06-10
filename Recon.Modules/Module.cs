@@ -1,31 +1,24 @@
-namespace Recon.Modules
-{
-    public abstract class Module
-    {
-        public string Name { get; set; }
+using System;
+using Recon.Entities;
 
-        public string Alias {get;set;}
+namespace Recon.Modules {
+    public abstract class Module {
 
-        public string Command {get;set;}
-
-        public string Args {get;set;}
-
-
-
-        public Module() {
-
+        public virtual event EventHandler<NotifierEventArgs> Notifier;
+        public virtual void OnNotification (NotifierEventArgs e) {
+            if (this.Notifier != null) {
+                this.Notifier (this, e);
+            }
         }
-        public Module(string name)
-        {
-            this.Name = name;
-        }
+        
 
-        public Module(string name, string command, string args):this(name)
-        {
-            this.Command = command;
-            this.Args = args;
-        }
 
-        public abstract void Run();
+    }
+
+    public abstract class Module<T> : Module {
+
+        public T Output {get;set;}
+
+        public abstract void Execute();
     }
 }

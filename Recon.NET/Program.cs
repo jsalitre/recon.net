@@ -11,27 +11,25 @@ namespace Recon.NET {
 
             Console.Write (ReconLogo.DrawLogo);
 
-            var parameters = new Parameters(args).Init();
-        
-            Utilities.Detect();
-            var result = Utilities.CheckModule("python");
-            if(result.Exists) { 
+            var options = new Options (args).Init ();
+
+            Utilities.Detect ();
+            var result = Utilities.CheckModule ("python");
+
+            // RUN AGAINST ALL MODULES DECLARED AND CHECK FOR ENVIRONMENT EXISTENCE
 
 
-                    var s =new Modules.Python.Sublist3r();
-                    s.Run();
+            if (result.Exists) {
 
+                var s = new Modules.Python.Sublist3r (options.Url);
+                s.Notifier+= (object sender, NotifierEventArgs args) => { Console.WriteLine(args.Message); };
+                s.Execute();
 
-                    var x = 0;
-
-
+                var x = s.Output.Result;
             }
 
-        
             // if(!System.IO.Directory.Exists(parameters.WorkingPath))
             //     System.IO.Directory.CreateDirectory(parameters.WorkingPath);
-
-
 
         }
     }

@@ -10,6 +10,32 @@
         "runtime": {
           "lib/netstandard2.0/CommandLine.dll": {}
         }
+      },
+      "Recon.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CommandLineParser": "2.8.0"
+        },
+        "compile": {
+          "bin/placeholder/Recon.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Recon.Entities.dll": {}
+        }
+      },
+      "Recon.Modules/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Recon.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Recon.Modules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Recon.Modules.dll": {}
+        }
       }
     }
   },
@@ -35,11 +61,23 @@
         "lib/netstandard2.0/CommandLine.dll",
         "lib/netstandard2.0/CommandLine.xml"
       ]
+    },
+    "Recon.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Recon.Entities/Recon.Entities.csproj",
+      "msbuildProject": "../Recon.Entities/Recon.Entities.csproj"
+    },
+    "Recon.Modules/1.0.0": {
+      "type": "project",
+      "path": "../Recon.Modules/Recon.Modules.csproj",
+      "msbuildProject": "../Recon.Modules/Recon.Modules.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CommandLineParser >= 2.8.0"
+      "CommandLineParser >= 2.8.0",
+      "Recon.Entities >= 1.0.0",
+      "Recon.Modules >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -65,7 +103,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/jsalitre/Documents/Projects/recon.net/Recon.Entities/Recon.Entities.csproj": {
+              "projectPath": "/home/jsalitre/Documents/Projects/recon.net/Recon.Entities/Recon.Entities.csproj"
+            },
+            "/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/Recon.Modules.csproj": {
+              "projectPath": "/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/Recon.Modules.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

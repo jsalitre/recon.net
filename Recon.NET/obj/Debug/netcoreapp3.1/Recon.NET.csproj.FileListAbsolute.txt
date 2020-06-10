@@ -13,3 +13,7 @@
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.dll
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.pdb
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/obj/Debug/netcoreapp3.1/Recon.NET.genruntimeconfig.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Entities.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Modules.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Modules.pdb

@@ -1,7 +1,8 @@
 using System;
-using CommandLine;
+using Recon.Entities;
 
-namespace Recon.Gears {
+namespace Recon.NET {
+
     class Program {
 
         static void Main (string[] args) {
@@ -10,15 +11,25 @@ namespace Recon.Gears {
 
             Console.Write (ReconLogo.DrawLogo);
 
+            var parameters = new Parameters(args).Init();
+        
+            Utilities.Detect();
+            var result = Utilities.CheckModule("python");
+            if(result.Exists) { 
 
-            var parameters = new Parameters (args);
-            parameters.Init();
 
-            Console.WriteLine(Environment.Detect());
+                    var s =new Modules.Python.Sublist3r();
+                    s.Run();
 
 
-            if(!System.IO.Directory.Exists(parameters.WorkingPath))
-                System.IO.Directory.CreateDirectory(parameters.WorkingPath);
+                    var x = 0;
+
+
+            }
+
+        
+            // if(!System.IO.Directory.Exists(parameters.WorkingPath))
+            //     System.IO.Directory.CreateDirectory(parameters.WorkingPath);
 
 
 

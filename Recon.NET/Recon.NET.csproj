@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.8.0"/>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recon.Entities\Recon.Entities.csproj" />
+    <ProjectReference Include="..\Recon.Modules\Recon.Modules.csproj" />
   </ItemGroup>
 </Project>

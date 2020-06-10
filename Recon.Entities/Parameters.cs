@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using CommandLine;
 
-namespace Recon.Gears {
+namespace Recon.Entities {
 
     public class Parameters {
 
@@ -20,13 +20,16 @@ namespace Recon.Gears {
 
         public Parameters (string[] args) {
             this.args = args;
-
+            
         }
 
-        public void Init () {
+        public Parameters Init () {
 
             Parser.Default.ParseArguments<Parameters> (this.args)
                 .WithParsed (RunOptions).WithNotParsed (HandleErrors);
+
+            return this;
+                
         }
 
         public void RunOptions (Parameters o) {

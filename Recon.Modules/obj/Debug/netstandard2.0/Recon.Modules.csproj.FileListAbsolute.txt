@@ -1,0 +1,12 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/bin/Debug/netstandard2.0/Recon.Modules.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/bin/Debug/netstandard2.0/Recon.Modules.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/bin/Debug/netstandard2.0/Recon.Modules.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/bin/Debug/netstandard2.0/Recon.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/bin/Debug/netstandard2.0/Recon.Entities.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.csproj.CopyComplete
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.Modules/obj/Debug/netstandard2.0/Recon.Modules.pdb

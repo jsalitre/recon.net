@@ -10,15 +10,22 @@ namespace Recon.Modules {
                 this.Notifier (this, e);
             }
         }
-        
-
 
     }
 
-    public abstract class Module<T> : Module {
+    public abstract class Module<T> : Module where T : class, new () {
 
-        public T Output {get;set;}
+        public Module () {
 
-        public abstract void Execute();
+        }
+
+        public Module (Options options) {
+            this.Options = options;
+        }
+        protected Options Options { get; set; }
+
+        public T Output { get; set; } = new T ();
+
+        public abstract void Execute ();
     }
 }

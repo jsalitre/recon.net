@@ -7,7 +7,7 @@ namespace Recon.Entities {
     public class Options {
 
         [Option ('u', "url", Required = true, HelpText = "target domain")]
-        public Uri Url { get; set; }
+        public Uri Target { get; set; }
 
         [Option ('p', "path", Required = true, HelpText = "root folder where all data is stored")]
         public string WorkingPath {get;set;}
@@ -34,10 +34,10 @@ namespace Recon.Entities {
 
         public void RunOptions (Options o) {
             Uri _targetUrl;
-            if (!Uri.TryCreate (o.Url.ToString(), UriKind.Absolute, out _targetUrl)) {
+            if (!Uri.TryCreate (o.Target.ToString(), UriKind.Absolute, out _targetUrl)) {
                 
             } else {
-                this.Url = _targetUrl;
+                this.Target = _targetUrl;
             }
 
             this.WorkingPath = o.WorkingPath;

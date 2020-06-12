@@ -9,26 +9,23 @@ namespace Recon.Modules.Python {
     public class Sublist3r : PythonModule {
         public Sublist3r (Uri domain) {
 
-            
             this.Args = $"/opt/Sublist3r/sublist3r.py -d {domain.Host} --no-color";
         }
 
-        public override void Execute() {
+        public override void Execute () {
 
-            base.Execute();
-            
-            List<string> parsedResults = new List<string>();    
+            base.Execute ();
 
-            foreach(var x in this.Output.Result) {
-                if(!x.StartsWith("[") && x.Contains("hackerone.com")) {
-                    parsedResults.Add(x);
+            List<string> parsedResults = new List<string> ();
+
+            foreach (var x in this.Output.Result) {
+                if (!x.StartsWith ("[") && x.Contains ("hackerone.com")) {
+                    parsedResults.Add (x);
                 }
             }
             this.Output.Result = parsedResults;
 
-
         }
 
-       
     }
 }

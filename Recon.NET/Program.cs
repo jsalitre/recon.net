@@ -1,5 +1,7 @@
 using System;
 using Recon.Entities;
+using Recon.Modules.Python;
+using Recon.Modules.Http;
 
 namespace Recon.NET {
 
@@ -19,18 +21,25 @@ namespace Recon.NET {
             // RUN AGAINST ALL MODULES DECLARED AND CHECK FOR ENVIRONMENT EXISTENCE
 
 
-            if (result.Exists) {
+            // if (result.Exists) {
 
-                var s = new Modules.Python.Sublist3r (options.Url);
-                s.Notifier+= (object sender, NotifierEventArgs args) => { Console.WriteLine(args.Message); };
-                s.Execute();
+            //     var sublist3r = new Sublist3r (options.Target);
+            //     sublist3r.Notifier+= (sender, args) => OnNotification(sender, args);
+            //     sublist3r.Execute();
 
-                var x = s.Output.Result;
-            }
+            //     // OUTPUT    
+            //     var x = sublist3r.Output.Result;
+            // }
 
-            // if(!System.IO.Directory.Exists(parameters.WorkingPath))
-            //     System.IO.Directory.CreateDirectory(parameters.WorkingPath);
+
+            var certSpotter = new CertSpotter(options);
+            certSpotter.Notifier += (sender, args) => OnNotification(sender, args);
+            certSpotter.Execute();
+            var y = certSpotter.Output.Result;
+            
 
         }
+        private static void OnNotification(object sender, NotifierEventArgs args) => Console.WriteLine(args.Message);
+
     }
 }

@@ -18,7 +18,7 @@ namespace Recon.Modules {
                 while (!process.StandardOutput.EndOfStream) {
                     var line = process.StandardOutput.ReadLine ();
                     args.Message = line;
-                    this.Output.Result.Add(line);
+                    this.Output.Result.Add (line);
                     OnNotification (args);
                 }
             }

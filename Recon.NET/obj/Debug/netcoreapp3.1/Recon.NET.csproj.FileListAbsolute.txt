@@ -17,3 +17,4 @@
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Entities.pdb
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Modules.dll
 /home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Recon.Modules.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll

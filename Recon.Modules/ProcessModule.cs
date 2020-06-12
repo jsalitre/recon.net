@@ -10,11 +10,12 @@ namespace Recon.Modules {
 
         public override void Execute () {
 
+            OnNotification(new StartNotifierEventArgs("Executing..."));
             var pinfo = Utilities.CreateProcess (this.Cmd, this.Args);
             this.Output = new ProcessOutputResult ();
             using (var process = Process.Start (pinfo)) {
 
-                var args = new NotifierEventArgs ();
+                var args = new SuccessNotifierEventArgs ();
                 while (!process.StandardOutput.EndOfStream) {
                     var line = process.StandardOutput.ReadLine ();
                     args.Message = line;

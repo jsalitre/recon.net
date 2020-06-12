@@ -15,19 +15,23 @@ namespace Recon.Modules.Http {
 
         public override void Execute () {
 
+            try {
             var client = new HttpClient ();
             var output = Task.FromResult (client.GetAsync (this.EndPoint)).GetAwaiter ();
 
             var result = output.GetResult ().Result;
 
             if (result.StatusCode == HttpStatusCode.OK) {
-                var notification = new NotifierEventArgs ();
-                notification.Message = "Ok";
-
+                var notification = new SuccessNotifierEventArgs ();
+            
                 OnNotification (notification);
+                 this.Output.Result = result;
+            }
+            } catch (Exception e) {
+                OnNotification(new ErrorNotifierEventArgs(e.InnerException.Message));
             }
 
-            this.Output.Result = result;
+           
 
         }
 

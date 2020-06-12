@@ -3,13 +3,13 @@ using System;
 namespace Recon.Entities.Attributes
 {
 
-    [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct)] 
-    public class PythonAttribute: Attribute
+    
+    public class PythonAttribute: ModuleAttribute
     {
-        public PythonAttribute(string name)
+        public PythonAttribute(string name):base(name)
         {
-            this.Name = name;
+            
         }
-        public string Name { get; set; }
+
     }
 }

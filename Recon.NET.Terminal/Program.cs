@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Recon.NET.Entities;
 using Recon.NET.Interfaces;
 using Recon.NET.Modules;
@@ -9,7 +10,7 @@ namespace Recon.NET.Terminal {
 
         static void Main (string[] args) {
 
-            args = new string[] { "-u http://hackerone.com", "-p ~/recon" };
+            args = new string[] { "-u http://hackerone.com", "-p /home/jsalitre/recon" };
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Write (ReconLogo.DrawLogo);
             Console.ResetColor ();
@@ -20,17 +21,20 @@ namespace Recon.NET.Terminal {
             var result = Utilities.CheckModule ("python");
 
             // RUN AGAINST ALL MODULES DECLARED AND CHECK FOR ENVIRONMENT EXISTENCE
-
-            IModule x = new Sublist3r (options);
-            x.Notifier += (sender, args) => OnNotification (sender, args);
-            x.Execute ();
+            IModule currentScope = null;
+            currentScope = new SystemFolders (options);
+            currentScope.Notifier += (sender, args) => OnNotification (sender, args);
+            currentScope.Execute ();
+            // currentScope = new Sublist3r (options);
+            // currentScope.Notifier += (sender, args) => OnNotification (sender, args);
+            // currentScope.Execute ();
 
             // // OUTPUT    
-            // // var x = sublist3r.Output.Result;
+            // // var x = sublist3r.Output.Result;currentScope = new CertSpotter (options);
 
-            x = new CertSpotter (options);
-            x.Notifier += (sender, args) => OnNotification (sender, args);
-            x.Execute ();
+            currentScope = new CertSpotter (options);
+            currentScope.Notifier += (sender, args) => OnNotification (sender, args);
+            //currentScope.Execute ();
             // var y = current.Output.Result;
 
         }
@@ -47,7 +51,12 @@ namespace Recon.NET.Terminal {
                     break;
             }
 
-            Console.WriteLine (args.Message);
+            if (args.ReplaceLine) {
+                Console.Write ($"\r{args.Message}%");
+            } else {
+                Console.WriteLine (args.Message);
+            }
+
             Console.ResetColor ();
         }
 

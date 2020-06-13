@@ -40,7 +40,7 @@ namespace Recon.NET.Entities {
                 this.Target = _targetUrl;
             }
 
-            this.WorkingPath = o.WorkingPath;
+            this.WorkingPath = o.WorkingPath.Trim();
 
         }
 

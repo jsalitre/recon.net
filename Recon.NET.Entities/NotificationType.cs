@@ -5,6 +5,7 @@ namespace Recon.NET.Entities
         Info,
         Error,
         Success,
-        Warning
+        Warning,
+        Debug,
     }
 }

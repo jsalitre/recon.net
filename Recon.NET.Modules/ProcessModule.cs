@@ -18,12 +18,11 @@ namespace Recon.NET.Modules {
             this.Output = new ProcessOutputResult ();
             using (var process = Process.Start (pinfo)) {
 
-                var args = new SuccessNotifierEventArgs ();
+                
                 while (!process.StandardOutput.EndOfStream) {
                     var line = process.StandardOutput.ReadLine ();
-                    args.Message = line;
                     this.Output.Result.Add (line);
-                    Notify (args);
+                    Notify (NotifierEventArgs.Info(line));
                 }
             }
         }

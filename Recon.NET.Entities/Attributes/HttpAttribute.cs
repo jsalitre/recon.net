@@ -2,7 +2,6 @@ namespace Recon.NET.Entities.Attributes {
     public class HttpAttribute : ModuleAttribute {
         public string Url { get; set; }
 
-
         public HttpAttribute(string name, string url): base(name)
         {
             this.Url = url;

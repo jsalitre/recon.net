@@ -18,7 +18,7 @@ namespace Recon.NET.Modules {
 
             try {
             var client = new HttpClient ();
-            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            //client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
             var output = Task.FromResult (client.GetAsync (this.EndPoint)).GetAwaiter ();
 
             var result = output.GetResult ().Result;

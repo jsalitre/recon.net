@@ -1,0 +1,12 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/bin/Debug/netstandard2.0/Recon.NET.Interfaces.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/bin/Debug/netstandard2.0/Recon.NET.Interfaces.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/bin/Debug/netstandard2.0/Recon.NET.Interfaces.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/bin/Debug/netstandard2.0/Recon.NET.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/bin/Debug/netstandard2.0/Recon.NET.Entities.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.csproj.CopyComplete
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Interfaces/obj/Debug/netstandard2.0/Recon.NET.Interfaces.pdb

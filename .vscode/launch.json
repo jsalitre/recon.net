@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Recon.NET/bin/Debug/netcoreapp3.1/Recon.NET.dll",
+            "program": "${workspaceFolder}/Recon.NET.Terminal/bin/Debug/netcoreapp3.1/Recon.NET.Terminal.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Recon.NET",
+            "cwd": "${workspaceFolder}/Recon.NET.Terminal",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

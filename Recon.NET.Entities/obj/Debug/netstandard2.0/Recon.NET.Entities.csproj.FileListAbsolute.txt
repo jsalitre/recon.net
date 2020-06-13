@@ -1,0 +1,9 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/bin/Debug/netstandard2.0/Recon.NET.Entities.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/bin/Debug/netstandard2.0/Recon.NET.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/bin/Debug/netstandard2.0/Recon.NET.Entities.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Entities/obj/Debug/netstandard2.0/Recon.NET.Entities.pdb

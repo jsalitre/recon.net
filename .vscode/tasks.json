@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Recon.NET/Recon.NET.csproj",
+                "${workspaceFolder}/Recon.NET.Terminal/Recon.NET.Terminal.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Recon.NET/Recon.NETcsproj",
+                "${workspaceFolder}/Recon.NET.Terminal/Recon.NET.Terminalcsproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Recon.NET/Recon.NET.csproj",
+                "${workspaceFolder}/Recon.NET.Terminal/Recon.NET.Terminal.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

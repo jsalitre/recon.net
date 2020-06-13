@@ -1,0 +1,14 @@
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.csprojAssemblyReference.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.AssemblyInfoInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.AssemblyInfo.cs
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.csproj.CoreCompileInputs.cache
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Modules.deps.json
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Modules.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Modules.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Entities.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Entities.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.csproj.CopyComplete
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/obj/Debug/netstandard2.0/Recon.NET.Modules.pdb
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Interfaces.dll
+/home/jsalitre/Documents/Projects/recon.net/Recon.NET.Modules/bin/Debug/netstandard2.0/Recon.NET.Interfaces.pdb

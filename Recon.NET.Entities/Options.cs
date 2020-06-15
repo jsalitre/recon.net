@@ -34,12 +34,9 @@ namespace Recon.NET.Entities {
 
         public void RunOptions (Options o) {
             Uri _targetUrl;
-            if (!Uri.TryCreate (o.Target.ToString(), UriKind.Absolute, out _targetUrl)) {
-                
-            } else {
+            if (Uri.TryCreate (o.Target.ToString(), UriKind.Absolute, out _targetUrl)) {
                 this.Target = _targetUrl;
-            }
-
+            } 
             this.WorkingPath = o.WorkingPath.Trim();
 
         }

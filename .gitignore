@@ -1,4 +1,5 @@
 
 Recon.NET.Entities/obj/Debug/netstandard2.0/
-
+*/obj/*
+*/bin/*
 *.cache

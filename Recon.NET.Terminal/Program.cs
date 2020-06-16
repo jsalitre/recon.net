@@ -24,7 +24,7 @@ namespace Recon.NET.Terminal {
             IModule currentScope = null;
             currentScope = new SystemFolders (options);
             currentScope.Notifier += (sender, args) => OnNotification (sender, args);
-            currentScope.Execute ();
+            //currentScope.Execute ();
             // currentScope = new Sublist3r (options);
             // currentScope.Notifier += (sender, args) => OnNotification (sender, args);
             // currentScope.Execute ();
@@ -34,7 +34,7 @@ namespace Recon.NET.Terminal {
 
             currentScope = new CertSpotter (options);
             currentScope.Notifier += (sender, args) => OnNotification (sender, args);
-            //currentScope.Execute ();
+            currentScope.Execute ();
             // var y = current.Output.Result;
 
         }
@@ -47,12 +47,15 @@ namespace Recon.NET.Terminal {
                 case NotificationType.Success:
                     Console.ForegroundColor = ConsoleColor.Green;
                     break;
+                    case NotificationType.Debug:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    break;
                 default:
                     break;
             }
 
             if (args.ReplaceLine) {
-                Console.Write ($"\r{args.Message}%");
+                Console.Write ($"\r{args.Message}");
             } else {
                 Console.WriteLine (args.Message);
             }

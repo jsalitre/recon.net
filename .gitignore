@@ -1,5 +1,9 @@
 
-Recon.NET.Entities/obj/Debug/netstandard2.0/
+Recon.NET.Entities/*
+Recon.NET.Interfaces/*
+Recon.NET.Core/*
+Recon.NET.Terminal/*
+Recon.NET.Modules/*
 */obj/*
 */bin/*
 *.cache

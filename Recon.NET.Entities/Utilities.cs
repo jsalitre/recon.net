@@ -25,7 +25,7 @@ namespace Recon.NET.Entities {
             }
         }
 
-        public static ProcessStartInfo CreateProcess (string cmd, string args) { 
+        public static ProcessStartInfo CreateProcess (string cmd, string args) {
 
             var escape = cmd.Replace ("\"", "\\\"");
 

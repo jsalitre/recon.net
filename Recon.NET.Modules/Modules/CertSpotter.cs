@@ -1,10 +1,7 @@
 using System.Collections.Generic;
-using System.IO;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Json;
-using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Recon.NET.Entities;
 using Recon.NET.Entities.Attributes;
 
@@ -21,25 +18,14 @@ namespace Recon.NET.Modules {
 
             this.Notify (NotifierEventArgs.Info ($"Executing CertSpotter v1"));
 
-            HttpClient client = new HttpClient ();
-            client.DefaultRequestHeaders.Accept.Add (new MediaTypeWithQualityHeaderValue ("application/json"));
-            var result = client.GetStringAsync (this.EndPoint).GetAwaiter ().GetResult ();
+            using (var client = new HttpClient ()) {
 
-            result = result.Replace (@"\", string.Empty).Replace (System.Environment.NewLine, "").Replace ("\r", string.Empty).Replace ("\t", string.Empty).Trim ();
+                var response = client.SendAsync (new HttpRequestMessage (HttpMethod.Get, this.EndPoint)).GetAwaiter ();
+                var result = response.GetResult ().Content.ReadAsStringAsync ().GetAwaiter ().GetResult ();
+                var checkResult = JsonSerializer.Deserialize<IEnumerable<CertSpotterCertificateCheckResult>> (result);
+                this.Notify (NotifierEventArgs.Debug (result));
 
-            this.Notify(NotifierEventArgs.Debug(result));
-
-            using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(result))) {
-                
-                DataContractJsonSerializer js = new DataContractJsonSerializer (typeof (IEnumerable<CertSpotterCertificateCheckResult>));
-                var checkResult = (IEnumerable<CertSpotterCertificateCheckResult>)js.ReadObject(ms);
-
-                foreach(var r in checkResult) {
-                    this.Notify(NotifierEventArgs.Debug(r.ToString()));
-                }
-
-                //
-            };
+            }
 
             // this.Notify (NotifierEventArgs.Debug (result));
 

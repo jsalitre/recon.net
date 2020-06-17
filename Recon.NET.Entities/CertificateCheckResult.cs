@@ -2,57 +2,48 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Recon.NET.Entities {
-    [DataContract]
-    public class CertificateCheckResult : ICertificateCheckResult {
-        public virtual string Id { get; set; }
-        public virtual DateTime ValidFrom { get; set; }
-        public virtual DateTime ValidTo { get; set; }
-        public virtual IEnumerable<string> DNSNames { get; set; }
+
+    public class CertificateCheckResult<TId, TNames> : ICertificateCheckResult<TId, TNames> {
+
+        protected virtual string DateTimeFormat => "yyyy-MM-dd";
+
+        [JsonPropertyName ("id")]
+        public virtual TId Id { get; set; }
+
+        [JsonPropertyName ("not_before")]
+        protected virtual string ValidToDateString { get; set; }
+        public virtual DateTime ValidFrom {
+            get {
+                return DateTime.Parse (this.ValidToDateString, CultureInfo.InvariantCulture);
+            }
+        }
+
+        [JsonPropertyName ("not_after")]
+        protected virtual string ValidFromDateString { get; set; }
+        public virtual DateTime ValidTo {
+            get {
+                return DateTime.Parse (this.ValidFromDateString, CultureInfo.InvariantCulture);
+            }
+        }
+
+        [JsonPropertyName ("dns_names")]
+        public virtual TNames Name { get; set; }
+
     }
 
-    [DataContract]
-    public class CertSpotterCertificateCheckResult : ICertificateCheckResult {
+    public class CrtShCheckResult : CertificateCheckResult<long, string> {
 
-        private const string DateTimeFormat = "yyyy-MM-dd";
+        [JsonPropertyName ("name_value")]
+        public override string Name { get; set; }
 
-        [DataMember (Name = "id")]
-        public virtual string Id { get; set; }
+    }
 
-        [DataMember (Name = "dns_names")]
-        public IEnumerable<string> DNSNames { get; set; }
+    public class CertSpotterCertificateCheckResult : CertificateCheckResult<string, IEnumerable<string>> {
 
-        public DateTime ValidFrom {
-            get {
-                return DateTime.Parse (this.ValidFromDate, CultureInfo.InvariantCulture);
-            }
-            set {
-                this.ValidFromDate = value.ToString (DateTimeFormat);
-            }
-        }
-
-        [DataMember (Name = "not_before")]
-        public string ValidFromDate { get; set; }
-
-        public DateTime ValidTo {
-            get {
-                return DateTime.Parse(this.ValidToDate, CultureInfo.InvariantCulture);
-            }
-            set {
-                this.ValidToDate = value.ToString (DateTimeFormat);
-            }
-        }
-
-        [DataMember (Name = "not_after")]
-        public string ValidToDate { get; set; }
-
-        public override string ToString() {
-
-            var dns_names = string.Join("=>", this.DNSNames);
-
-            return $"{this.Id}|{dns_names}|valid_from:{this.ValidFromDate}|valid_to:{this.ValidToDate}";
-        }
+       
 
     }
 }

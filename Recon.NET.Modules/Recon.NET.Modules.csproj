@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\Recon.NET.Entities\Recon.NET.Entities.csproj" />
-    <ProjectReference Include="..\Recon.NET.Interfaces\Recon.NET.Interfaces.csproj" />
+    <ProjectReference Include="..\Recon.NET.Entities\Recon.NET.Entities.csproj"/>
+    <ProjectReference Include="..\Recon.NET.Interfaces\Recon.NET.Interfaces.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Text.Json" Version="5.0.0-preview.5.20278.1"/>
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>

@@ -45,6 +45,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0-preview.5.20278.1, )"
             }
           },
           "imports": [
@@ -163,9 +167,9 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "Newtonsoft.Json": {
+            "System.Text.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[5.0.0-preview.5.20278.1, )"
             }
           },
           "imports": [

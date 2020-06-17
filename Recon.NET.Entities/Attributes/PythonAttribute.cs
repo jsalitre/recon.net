@@ -1,14 +1,10 @@
 using System;
 
-namespace Recon.NET.Entities.Attributes
-{
+namespace Recon.NET.Entities.Attributes {
 
-    
-    public class PythonAttribute: ModuleAttribute
-    {
-        public PythonAttribute(string name):base(name)
-        {
-            
+    public class PythonAttribute : ModuleAttribute {
+        public PythonAttribute (string name) : base (name) {
+
         }
 
     }

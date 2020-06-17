@@ -35,6 +35,12 @@ namespace Recon.NET.Terminal {
             currentScope = new CertSpotter (options);
             currentScope.Notifier += (sender, args) => OnNotification (sender, args);
             currentScope.Execute ();
+
+            currentScope = new Crtsh(options);
+            currentScope.Notifier += (sender, args) => OnNotification (sender, args);
+            currentScope.Execute();
+
+
             // var y = current.Output.Result;
 
         }
